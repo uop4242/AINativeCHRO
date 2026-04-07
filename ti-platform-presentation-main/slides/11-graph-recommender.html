@@ -1,0 +1,178 @@
+<!-- Slide: Graph-Powered Recommenders -->
+<div class="slide slide-content" data-slide="0">
+    <div class="slide-header">
+        <div class="slide-number">00</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">Censia AI Engine</p>
+        <h2 class="slide-title-text">Graph-Powered Recommenders</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 19px; font-weight: 400; margin-top: 8px; line-height: 1.5;">Better recommendations come from better structure. We built the signal graph, then used multi-hop traversal to turn it into prioritized next steps.</p>
+    </div>
+    <div class="gr-layout">
+        <!-- Left: The Concept -->
+        <div class="gr-left">
+            <!-- Core idea card -->
+            <div class="gr-concept-card">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                    From Graph to Recommendation
+                </h4>
+                <p class="gr-concept-desc">
+                    The weighted relationship graph doesn't just describe connections &mdash; it <strong>generates recommendations</strong>. By traversing weighted edges and aggregating signal strength across paths, the system surfaces relationships that no lookup table or keyword index can find.
+                </p>
+                <div class="gr-concept-flow">
+                    <div class="gr-flow-node gr-flow-input">
+                        <div class="gr-flow-dot" style="background: var(--blue);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                        <span>Input Query</span>
+                    </div>
+                    <div class="gr-flow-edge">
+                        <svg width="40" height="12" viewBox="0 0 40 12"><line x1="0" y1="6" x2="32" y2="6" stroke="var(--gray-mid)" stroke-width="2" stroke-dasharray="4 3"/><polygon points="32,1 40,6 32,11" fill="var(--primary)"/></svg>
+                    </div>
+                    <div class="gr-flow-node gr-flow-graph">
+                        <div class="gr-flow-dot" style="background: var(--primary); box-shadow: 0 0 16px rgba(0, 182, 161, 0.4);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <span>Graph Traversal</span>
+                    </div>
+                    <div class="gr-flow-edge">
+                        <svg width="40" height="12" viewBox="0 0 40 12"><line x1="0" y1="6" x2="32" y2="6" stroke="var(--gray-mid)" stroke-width="2" stroke-dasharray="4 3"/><polygon points="32,1 40,6 32,11" fill="var(--primary)"/></svg>
+                    </div>
+                    <div class="gr-flow-node gr-flow-output">
+                        <div class="gr-flow-dot" style="background: var(--orange);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <span>Ranked Results</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendation types -->
+            <div class="gr-types-card">
+                <h4>What the Recommender Produces</h4>
+                <div class="gr-type-list">
+                    <div class="gr-type-item">
+                        <div class="gr-type-icon" style="background: rgba(0, 182, 161, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--primary)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Skill Recommendations</strong>
+                            <span>Given a title or role, surface the most statistically relevant skills &mdash; ranked by edge weight, not alphabetical order</span>
+                        </div>
+                    </div>
+                    <div class="gr-type-item">
+                        <div class="gr-type-icon" style="background: rgba(104, 97, 226, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--purple)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Title Recommendations</strong>
+                            <span>Given a set of skills, recommend the roles that best match &mdash; even roles the user hasn't considered</span>
+                        </div>
+                    </div>
+                    <div class="gr-type-item">
+                        <div class="gr-type-icon" style="background: rgba(59, 148, 220, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--blue)"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Cross-Attribute Discovery</strong>
+                            <span>Traverse across attribute types &mdash; skills to titles to industries &mdash; revealing non-obvious connections through multi-hop paths</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Live example + why it's different -->
+        <div class="gr-right">
+            <!-- Live example -->
+            <div class="gr-example-card">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--orange)"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                    Recommendation in Action
+                </h4>
+                <div class="gr-example-input">
+                    <span class="gr-example-label">Input</span>
+                    <span class="gr-example-value">"Machine Learning Engineer"</span>
+                </div>
+                <div class="gr-example-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </div>
+                <div class="gr-results-section">
+                    <div class="gr-result-group">
+                        <div class="gr-result-group-label" style="color: var(--primary);">Recommended Skills</div>
+                        <div class="gr-result-items">
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">PyTorch / TensorFlow</span>
+                                <span class="gr-result-weight" style="color: var(--primary);">0.93</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 93%; background: var(--primary);"></div></div>
+                            </div>
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">Deep Learning</span>
+                                <span class="gr-result-weight" style="color: var(--primary);">0.89</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 89%; background: var(--primary);"></div></div>
+                            </div>
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">MLOps / Model Deployment</span>
+                                <span class="gr-result-weight" style="color: var(--primary);">0.76</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 76%; background: var(--primary);"></div></div>
+                            </div>
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">Data Pipeline Architecture</span>
+                                <span class="gr-result-weight" style="color: var(--primary);">0.61</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 61%; background: var(--primary);"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gr-result-group">
+                        <div class="gr-result-group-label" style="color: var(--purple);">Recommended Titles</div>
+                        <div class="gr-result-items">
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">Data Scientist</span>
+                                <span class="gr-result-weight" style="color: var(--purple);">0.84</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 84%; background: var(--purple);"></div></div>
+                            </div>
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">Applied Scientist</span>
+                                <span class="gr-result-weight" style="color: var(--purple);">0.71</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 71%; background: var(--purple);"></div></div>
+                            </div>
+                            <div class="gr-result-item">
+                                <span class="gr-result-name">AI Platform Engineer</span>
+                                <span class="gr-result-weight" style="color: var(--purple);">0.64</span>
+                                <div class="gr-result-bar"><div class="gr-result-bar-fill" style="width: 64%; background: var(--purple);"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gr-example-note">
+                    Every result is ranked by computed edge weight &mdash; not keyword frequency, not alphabetical order. Weights reflect real co-occurrence strength across millions of profiles.
+                </div>
+            </div>
+
+            <!-- What makes this different -->
+            <div class="gr-diff-card">
+                <h5>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary-dark)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    Why Graph-Based Recommendations Are Different
+                </h5>
+                <div class="gr-diff-points">
+                    <div class="gr-diff-point">
+                        <div class="gr-diff-bullet" style="background: var(--primary);"></div>
+                        <div><strong>Computed, not curated.</strong> Every recommendation is derived from statistical aggregation across the entire dataset &mdash; not manually assembled lookup tables.</div>
+                    </div>
+                    <div class="gr-diff-point">
+                        <div class="gr-diff-bullet" style="background: var(--purple);"></div>
+                        <div><strong>Multi-dimensional.</strong> The same graph that recommends skills for a title also recommends titles for a skill, and discovers cross-attribute paths that span industries and functions.</div>
+                    </div>
+                    <div class="gr-diff-point">
+                        <div class="gr-diff-bullet" style="background: var(--orange);"></div>
+                        <div><strong>Confidence-ranked.</strong> Edge weights quantify recommendation strength. Weak associations are automatically pruned &mdash; only statistically significant connections surface.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speaker-notes" data-notes="0">
+        <h4>Speaker Notes</h4>
+        Now let's talk about what happens when you take that attribute graph and turn it into a recommender. This is our most advanced recommendation engine. Rather than relying on simple lookups or manually curated association tables, we traverse the weighted graph to generate recommendations dynamically. Here's how it works: you give the system an input &mdash; a title, a skill, any attribute &mdash; and it walks the graph, aggregating signal strength across connected edges. The output is a confidence-ranked list of recommendations. For "Machine Learning Engineer," the graph surfaces PyTorch and TensorFlow at 0.93 &mdash; almost always co-occurring. Deep Learning at 0.89. But it also recommends titles: Data Scientist, Applied Scientist, AI Platform Engineer &mdash; roles that share deep structural overlap in the graph. What makes this different from a standard recommender? Three things. First, it's computed, not curated &mdash; every recommendation is derived from statistical aggregation across millions of profiles, not a hand-built mapping. Second, it's multi-dimensional &mdash; the same traversal engine works across skills to titles, titles to skills, skills to industries, any attribute pair. Third, it's confidence-ranked. Weak associations are automatically pruned. Only statistically significant connections surface. This powers everything from job description autofill to candidate skill inference to career pathway generation.
+    </div>
+</div>

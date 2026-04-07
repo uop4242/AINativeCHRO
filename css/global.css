@@ -1,0 +1,208 @@
+/*
+ * global.css — Censia AI-Native CHRO Site
+ * ─────────────────────────────────────────
+ * Shared styles loaded by every page.
+ * Contains: CSS reset, canonical design tokens, global header/nav,
+ *           focus styles, skip-link.
+ *
+ * Page-specific styles live in their own files:
+ *   css/index.css                — Home (index.html)
+ *   css/ai-solution.css          — Explore the Platform (ai-native-chro-solution.html)
+ *   css/employee-deck.css        — Employee Intelligence (employee-intelligence-deck.html)
+ *   ti-platform-presentation-main/css/styles.css  — AI Data Foundation
+ *
+ * DO NOT add page-specific styles here.
+ */
+
+
+/* ── RESET ──────────────────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ── CANONICAL DESIGN TOKENS ─────────────────────────────────────
+ * Single source of truth for the entire site.
+ * All pages must load this file and reference these variables.
+ * ─────────────────────────────────────────────────────────────── */
+:root {
+    /* ── Brand colors ── */
+    --censia-teal:          #00B6A1;   /* Primary teal */
+    --censia-teal-deep:     #008573;
+    --censia-teal-dark:     #0A7571;
+    --censia-gold:          #D4A843;
+    --censia-coral:         #FF6B5A;
+
+    /* ── Teal transparency scale ── */
+    --teal-glow:            rgba(0, 182, 161, 0.15);
+    --teal-dim:             rgba(0, 182, 161, 0.08);
+    --teal-border:          rgba(0, 182, 161, 0.20);
+    --teal-border-strong:   rgba(0, 182, 161, 0.35);
+
+    /* ── Gold transparency scale ── */
+    --gold-dim:             rgba(212, 168, 67, 0.10);
+    --gold-border:          rgba(212, 168, 67, 0.25);
+
+    /* ── Coral transparency scale ── */
+    --coral-dim:            rgba(255, 107, 90, 0.10);
+    --coral-border:         rgba(255, 107, 90, 0.22);
+
+    /* ── Backgrounds ── */
+    --bg-darkest:           #001a17;
+    --bg-dark:              #0A2B2A;
+    --bg-warm:              #0D3230;
+    --bg-mid:               #0f3533;
+    --bg-card:              rgba(10, 55, 52, 0.65);
+    --bg-card-border:       rgba(0, 182, 161, 0.18);
+
+    /* ── Text ── */
+    --text-primary:         #FFFFFF;
+    --text-secondary:       #AADFD9;
+    --text-muted:           #5EA8A0;
+    --text-dim:             #8FADA8;
+
+    /* ── Typography ── */
+    --font-heading:         'Space Grotesk', sans-serif;
+    --font-body:            'Inter', sans-serif;
+
+    /* ── Nav ── */
+    --nav-height:           70px;
+    --nav-bg:               rgba(0, 47, 42, 0.95);
+    --nav-border:           rgba(0, 182, 161, 0.15);
+}
+
+
+/* ── FOCUS STYLES ────────────────────────────────────────────────
+ * Required for keyboard navigation (WCAG 2.1 AA).
+ * Uses :focus-visible so mouse clicks don't show the outline.
+ * ─────────────────────────────────────────────────────────────── */
+*:focus-visible {
+    outline: 2px solid var(--censia-teal);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+
+/* ── SKIP NAVIGATION ─────────────────────────────────────────────
+ * Add <a href="#main-content" class="skip-link">Skip to content</a>
+ * as the very first element inside <body> on each page.
+ * ─────────────────────────────────────────────────────────────── */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 9999;
+    padding: 8px 16px;
+    background: var(--censia-teal);
+    color: var(--bg-dark);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0 0 6px 6px;
+    text-decoration: none;
+    transition: top 0.2s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+
+/* ── GLOBAL HEADER / NAV ─────────────────────────────────────────
+ * Shared across all pages. Height is controlled by --nav-height.
+ * ─────────────────────────────────────────────────────────────── */
+.global-header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--nav-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+}
+
+.global-header-inner {
+    width: 100%;
+    max-width: 80rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.global-logo {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.global-logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.global-nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.global-nav-link {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dim);
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    white-space: nowrap;
+}
+
+.global-nav-link:hover {
+    color: var(--text-primary);
+}
+
+.global-nav-link.active {
+    color: var(--censia-teal);
+    border-bottom-color: var(--censia-teal);
+}
+
+
+/* ── GLOBAL NAV RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 768px) {
+    .global-header-inner {
+        padding: 0 1rem;
+    }
+    .global-nav-links {
+        gap: 18px;
+    }
+    .global-nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .global-logo {
+        width: 112px;
+    }
+    .global-nav-links {
+        gap: 12px;
+    }
+    .global-nav-link {
+        font-size: 11px;
+    }
+}

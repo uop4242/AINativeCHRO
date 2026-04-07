@@ -1,0 +1,180 @@
+<!-- Slide 5: A Self-Correcting Intelligence System -->
+<div class="slide slide-content" data-slide="5">
+    <div class="slide-header">
+        <div class="slide-number">05</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">Censia AI Engine</p>
+        <h2 class="slide-title-text">A Self-Correcting Intelligence System</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 19px; font-weight: 400; margin-top: 8px; line-height: 1.5;">Turning messy workforce language into shared meaning, trained on the observed evolution of roles and skills.</p>
+    </div>
+
+    <!-- Full slide layout: 3 zones stacked -->
+    <div class="ie-layout">
+        <!-- Zone 1: 4-Signal Resolver -->
+        <div class="resolver-zone">
+            <div class="resolver-input">
+                <span class="resolver-input-q">?</span>
+                <span class="resolver-input-skill">"Modeling"</span>
+                <span class="resolver-input-ctx">Financial Analyst @ Goldman Sachs</span>
+            </div>
+
+            <div class="resolver-flow">
+                <div class="resolver-signals">
+                    <div class="signal-card signal-card-teal">
+                        <div class="signal-card-head">
+                            <span class="signal-card-name">Skill Sim.</span>
+                        </div>
+                        <div class="signal-card-detail">Embedding distance to "Financial Modeling"</div>
+                    </div>
+                    <div class="signal-card signal-card-blue">
+                        <div class="signal-card-head">
+                            <span class="signal-card-name">Title Ctx</span>
+                        </div>
+                        <div class="signal-card-detail">"Financial Analyst" favors finance</div>
+                    </div>
+                    <div class="signal-card signal-card-purple">
+                        <div class="signal-card-head">
+                            <span class="signal-card-name">Company</span>
+                        </div>
+                        <div class="signal-card-detail">Goldman Sachs &rarr; financial domain</div>
+                    </div>
+                    <div class="signal-card signal-card-orange">
+                        <div class="signal-card-head">
+                            <span class="signal-card-name">Co-Skills</span>
+                        </div>
+                        <div class="signal-card-detail">Bloomberg Terminal, DCF, Valuation Modeling present</div>
+                    </div>
+                </div>
+
+                <div class="resolver-converge">
+                    <svg class="converge-lines" viewBox="0 0 400 24" preserveAspectRatio="none">
+                        <line x1="50" y1="0" x2="160" y2="24" stroke="var(--primary)" stroke-width="1.5" opacity="0.4"/>
+                        <line x1="150" y1="0" x2="180" y2="24" stroke="var(--blue)" stroke-width="1.2" opacity="0.4"/>
+                        <line x1="250" y1="0" x2="200" y2="24" stroke="var(--purple)" stroke-width="0.8" opacity="0.4"/>
+                        <line x1="350" y1="0" x2="220" y2="24" stroke="var(--orange)" stroke-width="0.8" opacity="0.4"/>
+                    </svg>
+                </div>
+
+                <div class="resolver-candidates">
+                    <div class="candidate-pill candidate-winner">
+                        <span class="candidate-check">&#10003;</span>
+                        <span class="candidate-name">Financial Modeling</span>
+                        <span class="candidate-conf">HIGH</span>
+                    </div>
+                    <div class="candidate-pill candidate-faded">
+                        <span class="candidate-name">3D Modeling</span>
+                        <span class="candidate-conf">LOW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zone 2+3: Cluster + Cycle side by side -->
+        <div class="ie-bottom">
+            <!-- Polysemy Cluster Scatter -->
+            <div class="cluster-scatter">
+                <div class="cluster-scatter-header">
+                    <span class="cluster-scatter-label">Polysemy Detection</span>
+                    <div class="cluster-scatter-title">"Automation"</div>
+                </div>
+                <div class="cluster-field" id="clusterField">
+                    <!-- Axis labels -->
+                    <span class="cluster-axis cluster-axis-x">Title embedding &rarr;</span>
+                    <span class="cluster-axis cluster-axis-y">Skill co-occurrence &rarr;</span>
+                    <!-- Cluster A: Test Automation (teal) — left blob -->
+                    <div class="cluster-dot dot-teal dot-lg" data-cluster="a" data-tx="14" data-ty="30" style="left:44%;top:38%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="18" data-ty="22" style="left:48%;top:32%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="22" data-ty="38" style="left:42%;top:42%"></div>
+                    <div class="cluster-dot dot-teal dot-sm" data-cluster="a" data-tx="10" data-ty="44" style="left:52%;top:36%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="26" data-ty="28" style="left:38%;top:48%"></div>
+                    <div class="cluster-dot dot-teal dot-sm" data-cluster="a" data-tx="16" data-ty="52" style="left:46%;top:44%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="20" data-ty="18" style="left:50%;top:28%"></div>
+                    <div class="cluster-dot dot-teal dot-lg" data-cluster="a" data-tx="12" data-ty="36" style="left:40%;top:52%"></div>
+                    <div class="cluster-dot dot-teal dot-sm" data-cluster="a" data-tx="24" data-ty="48" style="left:36%;top:34%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="8" data-ty="40" style="left:54%;top:46%"></div>
+                    <div class="cluster-dot dot-teal dot-sm" data-cluster="a" data-tx="19" data-ty="56" style="left:44%;top:56%"></div>
+                    <div class="cluster-dot dot-teal" data-cluster="a" data-tx="28" data-ty="34" style="left:34%;top:40%"></div>
+                    <!-- Cluster B: Marketing Automation (blue) — right blob -->
+                    <div class="cluster-dot dot-blue dot-lg" data-cluster="b" data-tx="74" data-ty="32" style="left:56%;top:40%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="78" data-ty="24" style="left:52%;top:34%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="70" data-ty="40" style="left:60%;top:46%"></div>
+                    <div class="cluster-dot dot-blue dot-sm" data-cluster="b" data-tx="82" data-ty="36" style="left:48%;top:50%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="68" data-ty="48" style="left:58%;top:38%"></div>
+                    <div class="cluster-dot dot-blue dot-sm" data-cluster="b" data-tx="76" data-ty="52" style="left:54%;top:52%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="84" data-ty="28" style="left:62%;top:30%"></div>
+                    <div class="cluster-dot dot-blue dot-lg" data-cluster="b" data-tx="72" data-ty="44" style="left:50%;top:56%"></div>
+                    <div class="cluster-dot dot-blue dot-sm" data-cluster="b" data-tx="80" data-ty="20" style="left:56%;top:26%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="66" data-ty="56" style="left:64%;top:44%"></div>
+                    <div class="cluster-dot dot-blue dot-sm" data-cluster="b" data-tx="86" data-ty="42" style="left:46%;top:48%"></div>
+                    <div class="cluster-dot dot-blue" data-cluster="b" data-tx="75" data-ty="58" style="left:58%;top:54%"></div>
+                    <!-- Divider -->
+                    <div class="cluster-divider" id="clusterDivider"></div>
+                </div>
+                <div class="cluster-labels">
+                    <div class="cluster-label cluster-label-a">
+                        <strong>Test Automation</strong>
+                        <span>QA Engineers, SDETs</span>
+                    </div>
+                    <div class="cluster-label cluster-label-b">
+                        <strong>Marketing Automation</strong>
+                        <span>Growth, Demand Gen</span>
+                    </div>
+                </div>
+                <div class="cluster-badge">Statistical pre-filter + LLM quality gate validates every proposed split</div>
+            </div>
+
+            <!-- Self-Correction Cycle -->
+            <div class="correction-cycle">
+                <div class="cycle-header">Continuous Self-Correction</div>
+                <div class="cycle-ring">
+                    <div class="cycle-step cycle-step-teal">
+                        <div class="cycle-step-icon">
+                            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </div>
+                        <div class="cycle-step-text">
+                            <strong>Detect</strong>
+                            <span>Mismatch agents scan for bad matches</span>
+                        </div>
+                    </div>
+                    <div class="cycle-arrow-down">
+                        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="var(--gray-mid)"/></svg>
+                    </div>
+                    <div class="cycle-step cycle-step-blue">
+                        <div class="cycle-step-icon">
+                            <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
+                        <div class="cycle-step-text">
+                            <strong>Merge</strong>
+                            <span>Near-duplicates auto-merge at 97%+</span>
+                        </div>
+                    </div>
+                    <div class="cycle-arrow-down">
+                        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="var(--gray-mid)"/></svg>
+                    </div>
+                    <div class="cycle-step cycle-step-orange">
+                        <div class="cycle-step-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <div class="cycle-step-text">
+                            <strong>Enrich</strong>
+                            <span>New skills match existing canonicals first</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cycle-loop-label">&#8635; runs until stable &middot; re-triggers on change</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="speaker-notes" data-notes="5">
+        <h4>Speaker Notes</h4>
+        That convergence you just saw &mdash; there's serious engineering behind it. Let me show you what's actually happening.
+
+        When we see 'Modeling' on a resume, we don't guess. We score four independent signals &mdash; skill embedding similarity, the person's job title, their company context, and what other skills they have &mdash; each weighted by reliability. For a Financial Analyst at Goldman Sachs whose other skills include Bloomberg Terminal and DCF analysis &mdash; that resolves to Financial Modeling with high confidence. A 3D Artist at Pixar with Maya and ZBrush? 3D Modeling. The signals converge.
+
+        But here's what really sets this apart: when a canonical skill has variants where the job title patterns genuinely disagree &mdash; like 'Automation' appearing on both QA engineers and marketing managers &mdash; we detect that statistically. We cluster the title embeddings, check the separation, and if it's real, propose a split. A language model validates the split before anything changes in the taxonomy. This handles polysemy at scale, automatically.
+
+        And the taxonomy heals itself. Agents continuously scan for mismatches and fix them. Near-duplicate canonicals get auto-merged. New skills always match against existing canonicals first &mdash; the system never creates redundancy.
+
+        This is why it's defensible. You need the data, the algorithms, and years of feedback loops to build something like this.
+    </div>
+</div>

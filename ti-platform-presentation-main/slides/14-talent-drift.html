@@ -1,0 +1,156 @@
+<!-- Slide: Talent Attribute Drift — A Decade of Convergence -->
+<div class="slide slide-content" data-slide="0" id="driftSlide" style="background: linear-gradient(135deg, #060a0f 0%, #0a1018 40%, #08120f 100%); color: white; overflow: hidden;">
+
+    <!-- ═══ FULL-BLEED 3D GRAPH (behind everything) ═══ -->
+    <div id="driftGraphBg" class="drift-graph-bg"></div>
+
+    <!-- Ambient radial glow that pulses with time -->
+    <div class="drift-ambient-glow" id="driftAmbientGlow"></div>
+
+    <!-- ═══ FOREGROUND CONTENT ═══ -->
+    <div class="drift-fg">
+
+        <div class="slide-header" style="position: relative; z-index: 20;">
+            <div class="slide-number" style="color: #00B6A1;">00</div>
+            <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">From Engine to Outcomes</p>
+            <h2 class="slide-title-text" style="color: white;">Talent Attribute Drift</h2>
+            <p style="color: rgba(255,255,255,0.65); font-size: 19px; font-weight: 400; margin-top: 8px; line-height: 1.5;">Adaptive skill modeling continuously recalibrates as role definitions, market demand, and capability expectations shift.</p>
+        </div>
+
+        <div class="drift-layout">
+            <!-- Left column: narrative cards (glassmorphism) -->
+            <div class="drift-left">
+                <div class="drift-narrative-card">
+                    <h4>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00B6A1"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                        Skills Don't Stand Still
+                    </h4>
+                    <p>Over the past decade, entire skill clusters have migrated, merged, and reshaped &mdash; roles that shared nothing ten years ago now overlap significantly.</p>
+                    <p>This graph visualizes <strong>real drift patterns</strong> computed across millions of career histories. Watch how disconnected clusters converge as the talent landscape evolves.</p>
+                </div>
+
+                <!-- Candidate story -->
+                <div class="drift-story-card">
+                    <div class="drift-story-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9630"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        Two Careers, One Convergence
+                    </div>
+                    <div class="drift-personas">
+                        <div class="drift-persona">
+                            <div class="drift-persona-avatar" style="background: rgba(59, 148, 220, 0.25); border-color: rgba(59, 148, 220, 0.5);">A</div>
+                            <div class="drift-persona-info">
+                                <strong>Candidate A</strong>
+                                <span>Marketing Analyst, 2015</span>
+                                <span class="drift-persona-skills">Excel, Campaign Metrics, Segmentation</span>
+                            </div>
+                        </div>
+                        <div class="drift-persona-gap">
+                            <div class="drift-gap-line"></div>
+                            <div class="drift-gap-label" id="driftOverlapLabel">0% overlap</div>
+                            <div class="drift-gap-line"></div>
+                        </div>
+                        <div class="drift-persona">
+                            <div class="drift-persona-avatar" style="background: rgba(104, 97, 226, 0.25); border-color: rgba(104, 97, 226, 0.5);">B</div>
+                            <div class="drift-persona-info">
+                                <strong>Candidate B</strong>
+                                <span>Data Engineer, 2015</span>
+                                <span class="drift-persona-skills">SQL, ETL Pipelines, Hadoop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drift-story-insight" id="driftInsightText">
+                        In 2015, these two profiles shared <strong>zero common skills</strong>. Their worlds didn't touch.
+                    </div>
+                </div>
+
+                <!-- Implications -->
+                <div class="drift-implications-card">
+                    <h5>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#00B6A1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        Why This Matters
+                    </h5>
+                    <div class="drift-impl-items">
+                        <div class="drift-impl-item">
+                            <div class="drift-impl-bullet" style="background: #00B6A1;"></div>
+                            <span>Static skill taxonomies decay &mdash; the platform must model drift to stay accurate</span>
+                        </div>
+                        <div class="drift-impl-item">
+                            <div class="drift-impl-bullet" style="background: #FF9630;"></div>
+                            <span>Talent pools that seem unrelated today may converge tomorrow &mdash; early detection unlocks strategic hiring</span>
+                        </div>
+                        <div class="drift-impl-item">
+                            <div class="drift-impl-bullet" style="background: #6861E2;"></div>
+                            <span>Career pathway recommendations must account for how the landscape is shifting, not just where it is</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column: timeline + metrics (floating over graph) -->
+            <div class="drift-right">
+                <!-- Year badge (large, floating) -->
+                <div class="drift-year-display" id="driftYearBadge">2015</div>
+
+                <!-- Spacer to push controls to bottom -->
+                <div class="drift-right-spacer"></div>
+
+                <!-- Legend -->
+                <div class="drift-graph-legend">
+                    <div class="drift-legend-item">
+                        <div class="drift-legend-dot" style="background: #3B94DC; box-shadow: 0 0 6px rgba(59,148,220,0.6);"></div>
+                        <span>Marketing &amp; Analytics</span>
+                    </div>
+                    <div class="drift-legend-item">
+                        <div class="drift-legend-dot" style="background: #6861E2; box-shadow: 0 0 6px rgba(104,97,226,0.6);"></div>
+                        <span>Data Engineering</span>
+                    </div>
+                    <div class="drift-legend-item">
+                        <div class="drift-legend-dot" style="background: #00B6A1; box-shadow: 0 0 6px rgba(0,182,161,0.6);"></div>
+                        <span>Converged Skills</span>
+                    </div>
+                    <div class="drift-legend-item">
+                        <div class="drift-legend-dot" style="background: #FF9630; box-shadow: 0 0 6px rgba(255,150,48,0.6);"></div>
+                        <span>Emerging Bridge</span>
+                    </div>
+                </div>
+
+                <!-- Timeline scrubber -->
+                <div class="drift-timeline">
+                    <div class="drift-timeline-track">
+                        <div class="drift-timeline-fill" id="driftTimelineFill"></div>
+                        <div class="drift-timeline-thumb" id="driftTimelineThumb"></div>
+                    </div>
+                    <div class="drift-timeline-labels">
+                        <span>2015</span>
+                        <span>2017</span>
+                        <span>2019</span>
+                        <span>2021</span>
+                        <span>2023</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+
+                <!-- Drift metrics -->
+                <div class="drift-metrics">
+                    <div class="drift-metric">
+                        <div class="drift-metric-value" id="driftMetricOverlap" style="color: #00B6A1;">0%</div>
+                        <div class="drift-metric-label">Skill Overlap</div>
+                    </div>
+                    <div class="drift-metric">
+                        <div class="drift-metric-value" id="driftMetricEdges" style="color: #FF9630;">0</div>
+                        <div class="drift-metric-label">Cross-Cluster Edges</div>
+                    </div>
+                    <div class="drift-metric">
+                        <div class="drift-metric-value" id="driftMetricBridge" style="color: #6861E2;">0</div>
+                        <div class="drift-metric-label">Bridge Skills</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="speaker-notes" data-notes="0">
+        <h4>Speaker Notes</h4>
+        This is one of the most important things to understand about talent intelligence: skills don't stand still. What you're seeing is a real-time visualization of how talent attribute clusters have drifted over the past decade, computed across our dataset of millions of career histories. Start on the left in 2015 — you see two clearly separated clusters. Blue is marketing and analytics: Excel, campaign metrics, segmentation. Purple is data engineering: SQL, ETL pipelines, Hadoop. These two worlds barely touched. Now watch what happens as we move through time. By 2018, a few bridge skills start appearing — Python shows up in both clusters. By 2020, SQL has migrated from being a purely data engineering skill to appearing in marketing analytics profiles. By 2023, you see significant overlap. Skills like Python, SQL, data visualization, and basic statistics are now shared across both domains. The overlap has gone from zero to around 50 percent. Take two real candidates: Candidate A was a Marketing Analyst in 2015, Candidate B was a Data Engineer. Eight years ago, their skill profiles had nothing in common. Today, Candidate A's evolved skill set has a 50 percent overlap with Candidate B's current profile. This has massive implications. Static skill taxonomies decay — if you're still using a skill framework from five years ago, it's already wrong. Talent pools that seem unrelated today may converge tomorrow, and if you can detect that early, you unlock strategic hiring advantages. And career pathway recommendations must account for where the landscape is heading, not just where it is today. That's what our temporal intelligence layer captures.
+    </div>
+</div>

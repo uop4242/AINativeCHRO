@@ -1,0 +1,231 @@
+<!-- Slide: The Attribute Intelligence Graph -->
+<div class="slide slide-content" data-slide="0">
+    <div class="slide-header">
+        <div class="slide-number">00</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 6px;">Censia AI Engine</p>
+        <h2 class="slide-title-text">The Attribute Intelligence Graph</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 14px; font-weight: 400; margin-top: 4px; line-height: 1.4;">A computed graph where edge weights encode real co-occurrence strength. It's the retrieval backbone agents need for reliable matching and next-step recommendations.</p>
+    </div>
+    <div class="ag-layout" style="gap: 18px; overflow: hidden;">
+        <!-- Left: The Graph Concept -->
+        <div class="ag-left" style="gap: 8px; min-height: 0; overflow: hidden;">
+            <div class="ag-graph-card" style="padding: 10px 14px;">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Weighted Relationship Graph
+                </h4>
+                <!-- Visual: Node-link graph diagram -->
+                <div class="ag-graph-visual" style="height: 120px; margin-bottom: 4px;">
+                    <!-- Central hub -->
+                    <div class="ag-node ag-node-center">
+                        <div class="ag-node-dot" style="background: var(--primary); width: 44px; height: 44px; box-shadow: 0 0 24px rgba(0, 182, 161, 0.4);">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
+                        </div>
+                        <span class="ag-node-label">Data Scientist</span>
+                    </div>
+                    <!-- Connected nodes arranged around center -->
+                    <div class="ag-connections">
+                        <div class="ag-connection ag-conn-tl">
+                            <div class="ag-edge" style="--edge-color: var(--primary);"><span class="ag-edge-weight">0.91</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--blue);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                                </div>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="ag-connection ag-conn-tr">
+                            <div class="ag-edge" style="--edge-color: var(--primary);"><span class="ag-edge-weight">0.87</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--blue);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                                </div>
+                                <span>Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="ag-connection ag-conn-ml">
+                            <div class="ag-edge" style="--edge-color: var(--orange);"><span class="ag-edge-weight">0.74</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--purple);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                                </div>
+                                <span>ML Engineer</span>
+                            </div>
+                        </div>
+                        <div class="ag-connection ag-conn-mr">
+                            <div class="ag-edge" style="--edge-color: var(--orange);"><span class="ag-edge-weight">0.69</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--purple);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                                </div>
+                                <span>Research Scientist</span>
+                            </div>
+                        </div>
+                        <div class="ag-connection ag-conn-bl">
+                            <div class="ag-edge" style="--edge-color: var(--blue);"><span class="ag-edge-weight">0.82</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--blue);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                                </div>
+                                <span>Statistics</span>
+                            </div>
+                        </div>
+                        <div class="ag-connection ag-conn-br">
+                            <div class="ag-edge" style="--edge-color: rgba(104, 97, 226, 0.6);"><span class="ag-edge-weight">0.58</span></div>
+                            <div class="ag-node-sm">
+                                <div class="ag-node-dot-sm" style="background: var(--gray-dark);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2z"/></svg>
+                                </div>
+                                <span>Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ag-graph-caption" style="padding-top: 4px; font-size: 10px; line-height: 1.3;">
+                    Every edge is <strong>weighted by co-occurrence strength</strong> across millions of profiles. Thicker edges = stronger association.
+                </div>
+            </div>
+            <!-- What the graph connects -->
+            <div class="ag-connects-card" style="padding: 8px 12px;">
+                <h4>Attribute Dimensions Connected</h4>
+                <div class="ag-connect-grid">
+                    <div class="ag-connect-item" style="padding: 4px 8px;">
+                        <div class="ag-connect-icon" style="background: rgba(0, 182, 161, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--primary)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Skills &harr; Skills</strong>
+                            <span>Co-occurrence patterns, substitutability</span>
+                        </div>
+                    </div>
+                    <div class="ag-connect-item" style="padding: 4px 8px;">
+                        <div class="ag-connect-icon" style="background: rgba(104, 97, 226, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--purple)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Titles &harr; Skills</strong>
+                            <span>Which skills define which roles</span>
+                        </div>
+                    </div>
+                    <div class="ag-connect-item" style="padding: 4px 8px;">
+                        <div class="ag-connect-icon" style="background: rgba(59, 148, 220, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--blue)"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Titles &harr; Titles</strong>
+                            <span>Career adjacency, role equivalence</span>
+                        </div>
+                    </div>
+                    <div class="ag-connect-item" style="padding: 4px 8px;">
+                        <div class="ag-connect-icon" style="background: rgba(255, 150, 48, 0.08);">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--orange)"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Skills &harr; Industries</strong>
+                            <span>Sector-specific skill demand signals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: How it works + examples -->
+        <div class="ag-right" style="gap: 6px; min-height: 0; overflow: hidden;">
+            <!-- How it works -->
+            <div class="ag-how-card" style="padding: 8px 12px;">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                    How It Works
+                </h4>
+                <div class="ag-how-steps" style="gap: 5px;">
+                    <div class="ag-how-step">
+                        <div class="ag-how-num" style="background: var(--primary); color: white;">1</div>
+                        <div>
+                            <strong>Custom Aggregation</strong>
+                            <p style="font-size: 12px; line-height: 1.35; margin: 0;">Billions of co-occurrence signals distilled into weighted edges across every attribute pair.</p>
+                        </div>
+                    </div>
+                    <div class="ag-how-step">
+                        <div class="ag-how-num" style="background: var(--blue); color: white;">2</div>
+                        <div>
+                            <strong>Graph Traversal</strong>
+                            <p style="font-size: 12px; line-height: 1.35; margin: 0;">Multi-hop paths reveal relationships invisible to direct keyword lookup.</p>
+                        </div>
+                    </div>
+                    <div class="ag-how-step">
+                        <div class="ag-how-num" style="background: var(--purple); color: white;">3</div>
+                        <div>
+                            <strong>Weighted Recommendations</strong>
+                            <p style="font-size: 12px; line-height: 1.35; margin: 0;">Edge weights drive confidence-ranked suggestions. Weak edges pruned automatically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live example: Deep connection discovery -->
+            <div class="ag-example-card" style="padding: 8px 12px;">
+                <h4>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--orange)"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                    Deep Connection Discovery
+                </h4>
+                <div class="ag-example-scenario">
+                    <div class="ag-example-query">
+                        <span class="ag-example-label">Input</span>
+                        <span class="ag-example-value">"Product Analyst" in Fintech</span>
+                    </div>
+                    <div class="ag-example-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </div>
+                    <div class="ag-example-results">
+                        <div class="ag-example-result" style="padding: 5px 8px;">
+                            <div class="ag-example-hop">
+                                <span class="ag-hop-badge" style="background: var(--primary); color: white;">1-hop</span>
+                            </div>
+                            <div class="ag-example-result-text">
+                                <strong>SQL, A/B Testing, Python</strong>
+                                <span>Direct skill associations &mdash; highest weight</span>
+                            </div>
+                        </div>
+                        <div class="ag-example-result" style="padding: 5px 8px;">
+                            <div class="ag-example-hop">
+                                <span class="ag-hop-badge" style="background: var(--blue); color: white;">2-hop</span>
+                            </div>
+                            <div class="ag-example-result-text">
+                                <strong>Growth Analyst, Data Analyst, BI Analyst</strong>
+                                <span>Adjacent titles sharing skill signatures</span>
+                            </div>
+                        </div>
+                        <div class="ag-example-result" style="padding: 5px 8px;">
+                            <div class="ag-example-hop">
+                                <span class="ag-hop-badge" style="background: var(--purple); color: white;">3-hop</span>
+                            </div>
+                            <div class="ag-example-result-text">
+                                <strong>Fintech &rarr; Payments &rarr; Risk Analytics</strong>
+                                <span>Industry-specific path reveals non-obvious lateral move</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What this powers callout -->
+            <div class="ag-powers-callout" style="padding: 7px 12px;">
+                <h5 style="margin-bottom: 6px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary-dark)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    What This Powers
+                </h5>
+                <div class="ag-powers-list">
+                    <span class="ag-power-tag" style="background: rgba(0, 182, 161, 0.08); color: var(--primary-dark);">Title Recommendations</span>
+                    <span class="ag-power-tag" style="background: rgba(59, 148, 220, 0.08); color: var(--blue);">Skill Inference</span>
+                    <span class="ag-power-tag" style="background: rgba(104, 97, 226, 0.08); color: var(--purple);">Career Pathways</span>
+                    <span class="ag-power-tag" style="background: rgba(255, 150, 48, 0.08); color: #B86E1B;">Gap Analysis</span>
+                    <span class="ag-power-tag" style="background: rgba(184, 42, 147, 0.08); color: var(--magenta);">Search Ranking</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speaker-notes" data-notes="0">
+        <h4>Speaker Notes</h4>
+        Now I want to show you what's underneath all of these capabilities &mdash; the infrastructure that makes recommendations, pathways, and search possible. We build a weighted relationship graph through custom aggregations across our entire dataset. Not a theoretical model &mdash; a computed graph where every edge represents real co-occurrence strength across millions of profiles. The graph connects every attribute dimension to every other dimension. Skills to skills &mdash; we know that Python and Machine Learning co-occur with a weight of 0.91, meaning they almost always appear together. But it goes deeper. Titles to skills &mdash; we know which skills statistically define each role. Titles to titles &mdash; we know which roles are adjacent and which career transitions are common. Skills to industries &mdash; we know how skill demand varies by sector. The power is in multi-hop traversal. When you ask about a "Product Analyst in Fintech," the first hop gives you the direct skills: SQL, A/B Testing, Python. The second hop reveals adjacent titles that share those skill signatures: Growth Analyst, BI Analyst. The third hop follows the industry edges and surfaces something no keyword search would ever find: that Risk Analytics in Payments is a viable lateral path with a surprising skill overlap. This graph is what powers everything. Title recommendations, skill inference, career pathways, gap analysis, search ranking &mdash; they all traverse these weighted edges. And because the graph is built from our proprietary dataset, it can't be replicated with generic data.
+    </div>
+</div>

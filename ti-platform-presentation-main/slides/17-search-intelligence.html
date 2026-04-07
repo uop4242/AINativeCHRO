@@ -1,0 +1,101 @@
+<!-- Slide 9a: The Search Intelligence Layer (HybridSearch) -->
+<div class="slide slide-content" data-slide="9">
+    <div class="slide-header">
+        <div class="slide-number">09</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">From Engine to Outcomes</p>
+        <h2 class="slide-title-text">The Search Intelligence Layer</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 19px; font-weight: 400; margin-top: 8px; line-height: 1.5;">Multi-signal retrieval with weighted rank fusion so every match is grounded, explainable, and actionable.</p>
+    </div>
+    <div class="hs-intel-layout">
+        <div class="hs-intel-left">
+            <!-- Four search vectors -->
+            <div class="hs-vector-card">
+                <div class="hs-vector-icon" style="background: rgba(0, 182, 161, 0.1);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#0A7571"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </div>
+                <div class="hs-vector-info">
+                    <h3>Precise Matching</h3>
+                    <p>Structured field-level correlation that catches exact and near-exact alignments across canonicalized skills, proficiency scores, and resolved role archetypes.</p>
+                    <div class="hs-vector-catches" style="color: var(--primary-dark); background: rgba(0, 182, 161, 0.06);">Catches &rarr; exact titles, canonical skills, credentials</div>
+                </div>
+            </div>
+            <div class="hs-vector-card">
+                <div class="hs-vector-icon" style="background: rgba(59, 148, 220, 0.1);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#3B94DC"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </div>
+                <div class="hs-vector-info">
+                    <h3>Relevance Scoring</h3>
+                    <p>Statistical term-frequency analysis across enriched Golden Records. Finds strong keyword signals even when profile structure varies.</p>
+                    <div class="hs-vector-catches" style="color: var(--blue); background: rgba(59, 148, 220, 0.06);">Catches &rarr; keyword-rich profiles, domain terminology</div>
+                </div>
+            </div>
+            <div class="hs-vector-card">
+                <div class="hs-vector-icon" style="background: rgba(255, 150, 48, 0.1);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF9630"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                </div>
+                <div class="hs-vector-info">
+                    <h3>Neural Embeddings</h3>
+                    <p>Dense vector representations that capture conceptual similarity. Understands that roles and skills can be equivalent without sharing a single word.</p>
+                    <div class="hs-vector-catches" style="color: #B86E1B; background: rgba(255, 150, 48, 0.06);">Catches &rarr; equivalent roles, adjacent skills, latent meaning</div>
+                </div>
+            </div>
+            <div class="hs-vector-card">
+                <div class="hs-vector-icon" style="background: rgba(104, 97, 226, 0.1);">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#6861E2"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                </div>
+                <div class="hs-vector-info">
+                    <h3>Learned Sparse Expansion</h3>
+                    <p>ML-derived token expansion that broadens recall by inferring terms a candidate <em>would</em> use &mdash; even if they don't appear in their profile.</p>
+                    <div class="hs-vector-catches" style="color: #4A44A8; background: rgba(104, 97, 226, 0.06);">Catches &rarr; implicit skills, inferred experience, semantic gaps</div>
+                </div>
+            </div>
+        </div>
+        <div class="hs-intel-right">
+            <!-- Fusion diagram -->
+            <div class="hs-fusion-card">
+                <h4>How They Combine</h4>
+                <div class="hs-fusion-flow">
+                    <div class="hs-fusion-inputs">
+                        <div class="hs-fusion-input" style="background: rgba(0, 182, 161, 0.1); color: var(--primary-dark);">Precise</div>
+                        <div class="hs-fusion-input" style="background: rgba(59, 148, 220, 0.1); color: var(--blue);">Relevance</div>
+                        <div class="hs-fusion-input" style="background: rgba(255, 150, 48, 0.1); color: #B86E1B;">Neural</div>
+                        <div class="hs-fusion-input" style="background: rgba(104, 97, 226, 0.1); color: #4A44A8;">Expansion</div>
+                    </div>
+                    <div class="hs-fusion-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--gray-mid)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </div>
+                    <div class="hs-fusion-engine">
+                        <div class="hs-fusion-engine-title">Weighted Rank Fusion</div>
+                        <div class="hs-fusion-engine-sub">Each vector weighted by signal strength per query context</div>
+                    </div>
+                    <div class="hs-fusion-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                    </div>
+                    <div class="hs-fusion-output">One unified ranking &mdash; <strong>precision + discovery</strong></div>
+                </div>
+            </div>
+            <!-- Why this matters -->
+            <div class="hs-why-card">
+                <h5>Why This Matters</h5>
+                <div class="hs-why-list">
+                    <div class="hs-why-item">
+                        <div class="hs-why-bullet" style="background: var(--primary);"></div>
+                        <div>No single search method captures every type of match. Exact matching misses equivalent roles. Semantic search misses precise credentials. We use all of them.</div>
+                    </div>
+                    <div class="hs-why-item">
+                        <div class="hs-why-bullet" style="background: var(--blue);"></div>
+                        <div>The fusion is weighted &mdash; not equal blending. The system dynamically adjusts which signals matter most depending on the nature of each query.</div>
+                    </div>
+                    <div class="hs-why-item">
+                        <div class="hs-why-bullet" style="background: var(--purple);"></div>
+                        <div>Vectors don't search raw text &mdash; they search through canonicalized skills, resolved role archetypes, proficiency scores, and career trajectories. That's our enriched intelligence layer.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speaker-notes" data-notes="9">
+        <h4>Speaker Notes</h4>
+        Now let's talk about what happens when you actually search across this enriched data. We don't use one search algorithm &mdash; we use four fundamentally different approaches, each designed to catch a different type of match. Precise matching catches exact alignments across our canonical skills and role archetypes. Relevance scoring finds strong keyword signals across our Golden Records. Neural embeddings understand conceptual similarity &mdash; that an SRE and a DevOps Engineer are the same thing even though they share no words. And learned sparse expansion infers terms a candidate would use, even if they haven't listed them. These four signals are fused using a weighted rank fusion engine &mdash; not a simple average, but a context-sensitive weighting. And critically, these vectors aren't searching raw text. They're searching through the enriched data layers we've been building &mdash; the skills taxonomy, the role archetypes, proficiency scores, career trajectories. That combination of multiple search methods with our proprietary data enrichment is what makes this defensible.
+    </div>
+</div>

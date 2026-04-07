@@ -1,0 +1,182 @@
+<!-- Slide: Title Intelligence — Recommender Workflows -->
+<div class="slide slide-content" data-slide="0">
+    <div class="slide-header">
+        <div class="slide-number">00</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">Censia AI Engine</p>
+        <h2 class="slide-title-text">Title Intelligence: From Noise to Precision</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 16px; font-weight: 400; margin-top: 6px; line-height: 1.5;">Disambiguation + ontology mapping across millions of variations, creating the foundation for reliable skills inference and matching at scale.</p>
+    </div>
+    <div class="tr-layout" style="gap: 24px; overflow: hidden;">
+        <!-- Left: The Pipeline -->
+        <div class="tr-left">
+            <!-- Step 1: Input -->
+            <div class="tr-step-card tr-step-input" style="padding: 12px 14px;">
+                <div class="tr-step-badge" style="background: var(--primary); color: white;">1</div>
+                <div class="tr-step-content">
+                    <h4>Raw Title Input</h4>
+                    <div class="tr-input-titles">
+                        <span class="tr-input-tag">Sr. Mgr, Data &amp; Analytics</span>
+                        <span class="tr-input-tag">Head of BI</span>
+                        <span class="tr-input-tag">Data Science Lead</span>
+                        <span class="tr-input-tag">Analytics Dir.</span>
+                        <span class="tr-input-tag">VP, Insights &amp; Analytics</span>
+                        <span class="tr-input-tag tr-input-tag-faded">Manager II — DA</span>
+                    </div>
+                    <p class="tr-step-note">Every company uses different naming conventions, abbreviations, internal codes. The same capability lives under dozens of strings.</p>
+                </div>
+            </div>
+
+            <!-- Arrow -->
+            <div class="tr-flow-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+
+            <!-- Step 2: Proprietary Resolution Engine -->
+            <div class="tr-step-card tr-step-engine" style="padding: 12px 14px;">
+                <div class="tr-step-badge" style="background: var(--blue); color: white;">2</div>
+                <div class="tr-step-content">
+                    <h4>Proprietary Resolution Engine</h4>
+                    <div class="tr-dual-models">
+                        <div class="tr-model-box" style="padding: 8px;">
+                            <div class="tr-model-icon" style="border-color: rgba(0, 182, 161, 0.4);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--primary)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            </div>
+                            <div class="tr-model-label">Pattern Recognition</div>
+                            <div class="tr-model-desc">Identifies recurring title patterns, co-occurrence signals, and organizational context at scale.</div>
+                        </div>
+                        <div class="tr-model-connector">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--gray-mid)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Fused</span>
+                        </div>
+                        <div class="tr-model-box" style="padding: 8px;">
+                            <div class="tr-model-icon" style="border-color: rgba(104, 97, 226, 0.4);">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--purple)"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                            </div>
+                            <div class="tr-model-label">Semantic Parsing</div>
+                            <div class="tr-model-desc">Interprets ambiguous titles, internal codes, and novel naming conventions using proprietary linguistic analysis.</div>
+                        </div>
+                    </div>
+                    <p class="tr-step-note">Neither layer alone is sufficient. Pattern recognition brings data-driven precision; semantic parsing brings linguistic flexibility. Together they handle everything from standard titles to internal codes.</p>
+                </div>
+            </div>
+
+            <!-- Arrow -->
+            <div class="tr-flow-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+
+            <!-- Step 3: Refinement -->
+            <div class="tr-step-card tr-step-refine" style="padding: 12px 14px;">
+                <div class="tr-step-badge" style="background: var(--orange); color: white;">3</div>
+                <div class="tr-step-content">
+                    <h4>Contextual Refinement</h4>
+                    <div class="tr-refine-dimensions">
+                        <div class="tr-refine-dim">
+                            <div class="tr-refine-icon" style="background: rgba(0, 182, 161, 0.08);">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary)"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Seniority</strong>
+                                <span>IC &rarr; Lead &rarr; Manager &rarr; Director &rarr; VP &rarr; C-Suite</span>
+                            </div>
+                        </div>
+                        <div class="tr-refine-dim">
+                            <div class="tr-refine-icon" style="background: rgba(59, 148, 220, 0.08);">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--blue)"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Organizational Function</strong>
+                                <span>Engineering, Finance, Operations, Marketing, HR&hellip;</span>
+                            </div>
+                        </div>
+                        <div class="tr-refine-dim">
+                            <div class="tr-refine-icon" style="background: rgba(104, 97, 226, 0.08);">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--purple)"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Industry Context</strong>
+                                <span>Same title means different things in different industries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Output + Insight -->
+        <div class="tr-right" style="gap: 10px;">
+            <!-- Final output -->
+            <div class="tr-output-card" style="padding: 14px 16px;">
+                <div class="tr-step-badge" style="background: var(--primary-dark); color: white;">4</div>
+                <div class="tr-output-header">
+                    <h4>Standardized Output</h4>
+                    <div class="tr-output-badge">Mapped to Censia Ontology</div>
+                </div>
+                <div class="tr-output-result">
+                    <div class="tr-output-row" style="padding: 6px 10px;">
+                        <div class="tr-output-original">Sr. Mgr, Data &amp; Analytics</div>
+                        <div class="tr-output-arrow">&rarr;</div>
+                        <div class="tr-output-standard">
+                            <div class="tr-standard-title">Senior Manager, Data Analytics</div>
+                            <div class="tr-standard-meta">
+                                <span class="tr-meta-tag" style="background: rgba(0, 182, 161, 0.1); color: var(--primary-dark);">Manager</span>
+                                <span class="tr-meta-tag" style="background: rgba(59, 148, 220, 0.1); color: var(--blue);">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-output-row" style="padding: 6px 10px;">
+                        <div class="tr-output-original">Head of BI</div>
+                        <div class="tr-output-arrow">&rarr;</div>
+                        <div class="tr-output-standard">
+                            <div class="tr-standard-title">Director, Business Intelligence</div>
+                            <div class="tr-standard-meta">
+                                <span class="tr-meta-tag" style="background: rgba(0, 182, 161, 0.1); color: var(--primary-dark);">Director</span>
+                                <span class="tr-meta-tag" style="background: rgba(59, 148, 220, 0.1); color: var(--blue);">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tr-output-row" style="padding: 6px 10px;">
+                        <div class="tr-output-original">Manager II — DA</div>
+                        <div class="tr-output-arrow">&rarr;</div>
+                        <div class="tr-output-standard">
+                            <div class="tr-standard-title">Manager, Data Analytics</div>
+                            <div class="tr-standard-meta">
+                                <span class="tr-meta-tag" style="background: rgba(0, 182, 161, 0.1); color: var(--primary-dark);">Manager</span>
+                                <span class="tr-meta-tag" style="background: rgba(59, 148, 220, 0.1); color: var(--blue);">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr-output-note">
+                    Every title resolves to a canonical form in the Censia ontology &mdash; with seniority, function, and archetype attached. This is what the rest of the platform searches, compares, and builds pathways on.
+                </div>
+            </div>
+
+            <!-- Why this is hard / competitive advantage -->
+            <div class="tr-advantage-card" style="padding: 14px 16px;">
+                <h5>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--primary-dark)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                    Why This Is Hard to Replicate
+                </h5>
+                <div class="tr-advantage-points">
+                    <div class="tr-adv-point">
+                        <div class="tr-adv-bullet" style="background: var(--primary);"></div>
+                        <div>The pattern engine draws on <strong>extensive real-world data</strong> &mdash; it knows that "Manager II — DA" at one company maps to "Manager, Data Analytics" because it's observed the pattern across thousands of organizations.</div>
+                    </div>
+                    <div class="tr-adv-point">
+                        <div class="tr-adv-bullet" style="background: var(--purple);"></div>
+                        <div>The semantic parser handles <strong>novel titles</strong> and internal codes that have never appeared in training data &mdash; but the pattern engine validates and constrains those suggestions against the real-world distribution.</div>
+                    </div>
+                    <div class="tr-adv-point">
+                        <div class="tr-adv-bullet" style="background: var(--orange);"></div>
+                        <div>Standardization isn't just string normalization. It's <strong>semantic resolution</strong> &mdash; decomposing a title into seniority, function, and domain, then mapping it to a position in our ontology that connects to skills, proficiency, and career trajectories.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="speaker-notes" data-notes="0">
+        <h4>Speaker Notes</h4>
+        Let me show you something that looks simple but is actually one of the hardest problems in talent intelligence — title standardization. Every company invents its own naming conventions. "Sr. Mgr, Data and Analytics," "Head of BI," "Manager II — DA" — these are all variations of similar roles, but no two companies express them the same way. Here's how we solve it. First, we take the raw titles as input. Then we run them through our proprietary resolution engine. The pattern recognition layer — trained on millions of real profiles — catches the patterns it's seen before. The semantic parsing layer handles the novel cases — internal codes, creative naming, abbreviations it hasn't encountered. These two layers are fused, not competing. Pattern recognition brings data-driven precision; semantic parsing brings linguistic flexibility. Next, we refine using context — seniority, organizational function, industry. "Head of BI" in finance vs. tech means different things. Finally, every title resolves to a canonical form in our ontology, with seniority, function, and archetype attached. This is what flows into everything else — the skills taxonomy, the proficiency model, the career pathways, the search engine. If your title layer is messy, everything downstream breaks. Ours isn't.
+    </div>
+</div>

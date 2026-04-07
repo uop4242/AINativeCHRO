@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://censia.com/ai-native-chro/sitemap.xml

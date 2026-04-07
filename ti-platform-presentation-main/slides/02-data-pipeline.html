@@ -1,0 +1,177 @@
+<!-- Slide 02: From Raw Data to Structured Intelligence -->
+<div class="slide slide-content slide-data-pipeline" id="pipelineSlide" data-slide="1" style="background: linear-gradient(135deg, #0a0f14 0%, #0d1a1f 50%, #0a1614 100%); color: white; overflow: hidden;">
+
+    <!-- Particle layer — full bleed, above bg glow, below content -->
+    <div id="dpParticleContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5;"></div>
+
+    <!-- Ambient glow background -->
+    <div class="dp-ambient-glow"></div>
+
+    <div class="slide-header" style="position: relative; z-index: 10;">
+        <div class="slide-number" style="color: #00B6A1;">02</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">Overview</p>
+        <h2 class="slide-title-text" style="color: white;">From Raw Data to Structured Intelligence</h2>
+        <p style="color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 400; margin-top: 8px; line-height: 1.6;">
+            Censia has spent nearly a decade building
+            <strong style="color: #FF9630">a structured entity graph of over 550M professional profiles, spanning people, skills, roles, companies, industries, and the relationships between them.</strong>
+            It is sourced from thousands of data sources, then normalized, deduplicated, and continuously enriched with validated and AI-inferred attributes.
+            <em>Think of it as the professional world&rsquo;s equivalent of Google&rsquo;s Knowledge Graph&mdash;not keyword matching, but true contextual understanding.</em>
+            <strong style="color: #00B6A1;">Censia knows far more than where someone worked; it understands their role, inferred skills, career trajectory, and how they connect to thousands of other entities across the labor market.</strong>
+        </p>
+    </div>
+
+    <!-- Metrics Bar -->
+    <div class="dp-metrics-bar" style="position: relative; z-index: 10;">
+        <div class="dp-metric">
+            <span class="dp-metric-value">550M+</span>
+            <span class="dp-metric-label">Profiles</span>
+        </div>
+        <div class="dp-metric">
+            <span class="dp-metric-value">50+TB</span>
+            <span class="dp-metric-label">Raw Data</span>
+        </div>
+        <div class="dp-metric">
+            <span class="dp-metric-value">50+</span>
+            <span class="dp-metric-label">AI Models</span>
+        </div>
+        <div class="dp-metric">
+            <span class="dp-metric-value">125B+</span>
+            <span class="dp-metric-label">Tokens</span>
+        </div>
+        <div class="dp-metric">
+            <span class="dp-metric-value">1.5B</span>
+            <span class="dp-metric-label">Career Moves</span>
+        </div>
+    </div>
+
+    <!-- Main Flow: Sources → Pipeline → Golden Record -->
+    <div class="dp-flow" style="position: relative; z-index: 10;">
+
+        <!-- Left: Source Pills -->
+        <div class="dp-sources">
+            <div class="dp-section-label">DATA SOURCES</div>
+            <div class="dp-source-pill" data-color="#3B94DC" style="--pill-color: rgba(59, 148, 220, 0.15); --pill-border: rgba(59, 148, 220, 0.3); --pill-text: #BCE1FE; --pill-glow: rgba(59, 148, 220, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#3B94DC"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                <span>ATS / HCM</span>
+            </div>
+            <div class="dp-source-pill" data-color="#00B6A1" style="--pill-color: rgba(0, 182, 161, 0.15); --pill-border: rgba(0, 182, 161, 0.3); --pill-text: #D4F3F0; --pill-glow: rgba(0, 182, 161, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#00B6A1"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span>People Data</span>
+            </div>
+            <div class="dp-source-pill" data-color="#FF9630" style="--pill-color: rgba(255, 150, 48, 0.15); --pill-border: rgba(255, 150, 48, 0.3); --pill-text: #FFD4A8; --pill-glow: rgba(255, 150, 48, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9630"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96z"/></svg>
+                <span>Work History</span>
+            </div>
+            <div class="dp-source-pill" data-color="#6861E2" style="--pill-color: rgba(104, 97, 226, 0.15); --pill-border: rgba(104, 97, 226, 0.3); --pill-text: #C4C1F7; --pill-glow: rgba(104, 97, 226, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#6861E2"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+                <span>Patents &amp; Pubs</span>
+            </div>
+            <div class="dp-source-pill" data-color="#3B94DC" style="--pill-color: rgba(59, 148, 220, 0.15); --pill-border: rgba(59, 148, 220, 0.3); --pill-text: #BCE1FE; --pill-glow: rgba(59, 148, 220, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#3B94DC"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                <span>Company Data</span>
+            </div>
+            <div class="dp-source-pill" data-color="#FF9630" style="--pill-color: rgba(255, 150, 48, 0.15); --pill-border: rgba(255, 150, 48, 0.3); --pill-text: #FFD4A8; --pill-glow: rgba(255, 150, 48, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#FF9630"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+                <span>Job Demand Data</span>
+            </div>
+            <div class="dp-source-pill" data-color="#6861E2" style="--pill-color: rgba(104, 97, 226, 0.15); --pill-border: rgba(104, 97, 226, 0.3); --pill-text: #C4C1F7; --pill-glow: rgba(104, 97, 226, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#6861E2"><path d="M17 16l-4-4V8.82C14.16 8.4 15 7.3 15 6c0-1.66-1.34-3-3-3S9 4.34 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H3v5h5v-3.05l4-4.2 4 4.2V21h5v-5h-4z"/></svg>
+                <span>Industry Data</span>
+            </div>
+            <div class="dp-source-pill" data-color="#00B6A1" style="--pill-color: rgba(0, 182, 161, 0.15); --pill-border: rgba(0, 182, 161, 0.3); --pill-text: #D4F3F0; --pill-glow: rgba(0, 182, 161, 0.3);">
+                <span class="dp-pill-glow"></span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#00B6A1"><path d="M22 11V3h-7v3H9V3H2v8h7V8h2v10h4v3h7v-8h-7v3h-2V8h2v3z"/></svg>
+                <span>Skills Ontology</span>
+            </div>
+        </div>
+
+        <!-- Center: Pipeline Track -->
+        <div class="dp-pipeline-track">
+            <div class="dp-track-label">THE TRANSFORMATION PIPELINE</div>
+            <div class="dp-stages-row">
+                <div class="dp-hstage" id="dpStage1" style="--stage-color: #FF9630;">
+                    <div class="dp-hstage-num">01</div>
+                    <div class="dp-hstage-name">Ingest</div>
+                    <div class="dp-hstage-desc">Stage and pull from raw sources</div>
+                </div>
+                <div class="dp-hstage-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><path d="M5 12h14M15 6l6 6-6 6"/></svg>
+                </div>
+                <div class="dp-hstage" id="dpStage2" style="--stage-color: #3B94DC;">
+                    <div class="dp-hstage-num">02</div>
+                    <div class="dp-hstage-name">Normalize / Standardize</div>
+                    <div class="dp-hstage-desc">Clean formats, resolve conflicts, unify schemas</div>
+                </div>
+                <div class="dp-hstage-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><path d="M5 12h14M15 6l6 6-6 6"/></svg>
+                </div>
+                <div class="dp-hstage" id="dpStage3" style="--stage-color: #6861E2;">
+                    <div class="dp-hstage-num">03</div>
+                    <div class="dp-hstage-name">Group &amp; Merge</div>
+                    <div class="dp-hstage-desc">Entity resolution across 550M profiles</div>
+                </div>
+                <div class="dp-hstage-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><path d="M5 12h14M15 6l6 6-6 6"/></svg>
+                </div>
+                <div class="dp-hstage" id="dpStage4" style="--stage-color: #00B6A1;">
+                    <div class="dp-hstage-num">04</div>
+                    <div class="dp-hstage-name">Score &amp; Label</div>
+                    <div class="dp-hstage-desc">NLP + ML models for seniority, function &amp; vectors</div>
+                    <div class="dp-hstage-tags">
+                        <span class="dp-htag" style="color: #00B6A1; border-color: rgba(0,182,161,0.3);">NLP</span>
+                        <span class="dp-htag" style="color: #6861E2; border-color: rgba(104,97,226,0.3);">ML</span>
+                    </div>
+                </div>
+                <div class="dp-hstage-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><path d="M5 12h14M15 6l6 6-6 6"/></svg>
+                </div>
+                <div class="dp-hstage" id="dpStage5" style="--stage-color: #22C55E;">
+                    <div class="dp-hstage-num">05</div>
+                    <div class="dp-hstage-name">Index &amp; Embed</div>
+                    <div class="dp-hstage-desc">Vectorized, searchable intelligence</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Golden Record Orb -->
+        <div class="dp-golden-record">
+            <div class="dp-orb-container">
+                <div class="dp-orb-outer-ring" id="dpOrbOuterRing"></div>
+                <div class="dp-orb-pulse-ring" id="dpOrbPulseRing"></div>
+                <div class="dp-orb" id="dpOrb">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/>
+                        <path d="M2 12h20"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="dp-orb-label">GOLDEN RECORD</div>
+        </div>
+    </div>
+
+    <!-- Bottom Callout -->
+    <div class="dp-callout" style="position: relative; z-index: 10;">
+        Every profile is a living record &mdash; enriched with inferred skills, proficiency signals, X-Factors, and career trajectory intelligence.
+    </div>
+
+    <div class="speaker-notes" data-notes="0">
+        <h4>Speaker Notes</h4>
+        Let me walk you through how we actually build the intelligence layer. It starts with data — and not the clean kind. We're pulling from hundreds of sources: people data, company data, job demand signals, industry classifications, salary benchmarks. It comes in every format imaginable, full of inconsistencies and duplicates.
+
+        The pipeline has five stages. First, we ingest everything — raw pulls from all these sources. Then we normalize and standardize — cleaning up encoding issues, format conflicts, and schema mismatches across providers.
+
+        The third stage is where it gets interesting: group and merge. Our entity resolution algorithms compare entire work histories to figure out which records belong to the same person, the same company, the same role. This is the hardest part — we're de-duplicating and linking across 550 million profiles.
+
+        Fourth, we score and label everything. Recency scoring, maturity scoring, seniority classification, organizational function labeling, and dozens of other derived attributes. We also compute dense vector representations across multiple dimensions for downstream intelligence.
+
+        Finally, we index and embed. Sparse embedding models are applied during the indexing pipeline to produce the final structured, searchable output. The transformation is dramatic: we go from what I call "data slop" — messy, inconsistent, duplicated — to clean, structured, scored intelligence — a Golden Record for every professional.
+    </div>
+</div>

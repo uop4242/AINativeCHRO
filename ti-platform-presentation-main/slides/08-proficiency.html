@@ -1,0 +1,319 @@
+<!-- Slide 6: Proficiency Intelligence -->
+<div class="slide slide-content" data-slide="6">
+  <div class="slide-header">
+    <div class="slide-number">06</div>
+    <p
+      style="
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+      "
+    >
+      Censia AI Engine
+    </p>
+    <h2 class="slide-title-text">
+      Proficiency: Vector-Enabled Mathematical Model
+    </h2>
+    <p
+      style="
+        color: rgba(0, 0, 0, 0.55);
+        font-size: 19px;
+        font-weight: 400;
+        margin-top: 8px;
+        line-height: 1.5;
+      "
+    >
+      Vector-based scoring that estimates real capability from multiple signals,
+      not self-reported checkmarks.
+    </p>
+  </div>
+  <div class="proficiency-grid" style="gap: 28px">
+    <!-- Left: The Model -->
+    <div class="proficiency-model">
+      <div class="index-cards" style="gap: 8px">
+        <div class="index-card" style="--delay: 0s; padding: 10px 14px">
+          <div
+            class="index-letter"
+            style="background: rgba(0, 182, 161, 0.15); color: var(--primary)"
+          >
+            R
+          </div>
+          <div class="index-info">
+            <h3>Recency</h3>
+            <p>
+              Exponential decay &mdash; skills fade over time unless actively
+              used
+            </p>
+            <svg
+              class="index-curve"
+              viewBox="0 0 80 32"
+              preserveAspectRatio="none"
+            >
+              <rect
+                class="curve-zone-warn"
+                x="56"
+                y="0"
+                width="24"
+                height="32"
+                fill="rgba(228,71,71,0.08)"
+                rx="2"
+              />
+              <path
+                d="M 0 4 C 8 4 16 6 24 10 C 36 16 52 24 72 29 L 80 30"
+                stroke="var(--primary)"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="index-card" style="--delay: 0.15s; padding: 10px 14px">
+          <div
+            class="index-letter"
+            style="background: rgba(59, 148, 220, 0.15); color: var(--blue)"
+          >
+            M
+          </div>
+          <div class="index-info">
+            <h3>Maturity</h3>
+            <p>
+              Saturation curve &mdash; rapid growth early, diminishing returns
+              over time
+            </p>
+            <svg
+              class="index-curve"
+              viewBox="0 0 80 32"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 0 30 C 12 14 24 8 40 6 C 52 5 66 4.5 80 4"
+                stroke="var(--blue)"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="index-card" style="--delay: 0.3s; padding: 10px 14px">
+          <div
+            class="index-letter"
+            style="background: rgba(104, 97, 226, 0.15); color: var(--purple)"
+          >
+            D
+          </div>
+          <div class="index-info">
+            <h3>Depth</h3>
+            <p>
+              Cumulative aligned tenure across every relevant role in a career
+              &mdash; augmented by vector-space similarity to capture adjacent
+              skill proximity
+            </p>
+            <svg
+              class="index-curve"
+              viewBox="0 0 80 32"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M 0 30 C 16 18 32 10 48 7 C 60 5.5 72 5 80 4.5"
+                stroke="var(--purple)"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equation weighting visual -->
+      <div class="equation-visual">
+        <div class="equation-weights">
+          <div class="eq-segment eq-segment-r"><span>R</span></div>
+          <div class="eq-segment eq-segment-m"><span>M</span></div>
+          <div class="eq-segment eq-segment-d"><span>D</span></div>
+        </div>
+        <div class="equation-label">
+          <span class="eq-arrow">&rarr;</span>
+          <span class="eq-score">Proficiency 1&ndash;5</span>
+        </div>
+      </div>
+
+      <!-- Feature callouts -->
+      <div class="proficiency-callouts">
+        <div class="prof-callout prof-callout-staleness">
+          <div class="prof-callout-head">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--error)">
+              <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+            </svg>
+            <strong>Staleness Penalty</strong>
+          </div>
+          <span
+            >Dormant skills face continuous down-weighting &mdash; not a cliff,
+            a calibrated curve</span
+          >
+        </div>
+        <div class="prof-callout prof-callout-multi">
+          <div class="prof-callout-head">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="var(--orange)"
+            >
+              <path
+                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+              />
+            </svg>
+            <strong>Multi-Role Aware</strong>
+          </div>
+          <span
+            >Current expertise isn&rsquo;t dragged down by older roles &mdash;
+            max-blend approach across career</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Distribution + Signals -->
+    <div class="proficiency-right">
+      <div class="proficiency-distribution" style="padding: 16px">
+        <div class="distribution-header">
+          <h3>Machine Learning &mdash; Data Science Team</h3>
+        </div>
+        <div class="distribution-bars">
+          <div class="dist-row">
+            <div class="dist-level">
+              <span class="level-number">5</span>
+              <span class="level-name">Expert</span>
+            </div>
+            <div class="dist-bar-container">
+              <div
+                class="dist-bar-fill"
+                data-width="12"
+                style="
+                  width: 0%;
+                  background: linear-gradient(90deg, #00b6a1, #0a7571);
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="dist-row">
+            <div class="dist-level">
+              <span class="level-number">4</span>
+              <span class="level-name">Advanced</span>
+            </div>
+            <div class="dist-bar-container">
+              <div
+                class="dist-bar-fill"
+                data-width="31"
+                style="
+                  width: 0%;
+                  background: linear-gradient(90deg, #00b6a1, #0a9b8a);
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="dist-row">
+            <div class="dist-level">
+              <span class="level-number">3</span>
+              <span class="level-name">Intermediate</span>
+            </div>
+            <div class="dist-bar-container">
+              <div
+                class="dist-bar-fill"
+                data-width="38"
+                style="
+                  width: 0%;
+                  background: linear-gradient(90deg, #00c4ae, #00b6a1);
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="dist-row">
+            <div class="dist-level">
+              <span class="level-number">2</span>
+              <span class="level-name">Basic</span>
+            </div>
+            <div class="dist-bar-container">
+              <div
+                class="dist-bar-fill"
+                data-width="15"
+                style="
+                  width: 0%;
+                  background: linear-gradient(90deg, #3b94dc, #2d7bc0);
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="dist-row">
+            <div class="dist-level">
+              <span class="level-number">1</span>
+              <span class="level-name">Novice</span>
+            </div>
+            <div class="dist-bar-container">
+              <div
+                class="dist-bar-fill"
+                data-width="4"
+                style="
+                  width: 0%;
+                  background: linear-gradient(90deg, #6861e2, #5a54c8);
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="distribution-avg">
+          <span class="avg-label">Team Average</span>
+          <span class="avg-value">3.2</span>
+        </div>
+        <div class="distribution-note">
+          Distributions at any level &mdash; individual, team, department,
+          organization
+        </div>
+      </div>
+
+      <!-- LMS Signal Exploration -->
+      <div class="lms-callout">
+        <div class="lms-badge">EXPLORING</div>
+        <div class="lms-content">
+          <strong>Learning Signal Integration</strong>
+          <span
+            >Incorporating LMS completion data as a proficiency boost &mdash;
+            weighted to reward serious training without over-inflating
+            scores</span
+          >
+        </div>
+      </div>
+
+      <div class="proficiency-footnote">
+        Configurable weights, half-lives, and staleness curves per customer
+      </div>
+    </div>
+  </div>
+  <div class="speaker-notes" data-notes="6">
+    <h4>Speaker Notes</h4>
+    This is where it gets powerful. We don't guess at proficiency &mdash; we
+    model it mathematically. Three indices &mdash; Recency, Maturity, and Depth
+    &mdash; each follow their own mathematical curve. Recency uses exponential
+    decay: a skill you used last month scores high, one from three years ago
+    fades. Maturity follows a saturation curve: your first year of experience
+    matters most, then diminishing returns. Depth accumulates across your entire
+    career, weighted by how central the skill was to each role. These aren't
+    just added together &mdash; they're weighted and combined with a staleness
+    penalty that continuously down-weights dormant skills. And we're multi-role
+    aware: if you're actively using Python today, your score doesn't get dragged
+    down because you also used it in a junior role eight years ago. We use a
+    max-blend approach that favors your best recent evidence. The result: a
+    defensible 1-to-5 proficiency score for every skill on every person. And we
+    can show distributions at any level. We're also exploring LMS integration
+    &mdash; giving a calibrated boost when someone completes serious training,
+    without letting a quick online course inflate their score. Every parameter
+    is tunable per customer &mdash; weights, half-lives, thresholds, staleness
+    curves. We can recalculate instantly with different settings.
+  </div>
+</div>

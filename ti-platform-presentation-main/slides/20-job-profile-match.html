@@ -1,0 +1,365 @@
+<!-- Slide 11: Job Profile Matching — Live Data -->
+<div
+  class="slide slide-job-match"
+  data-slide="11"
+  style="background: var(--gray-bg); color: var(--black); padding: 40px 60px"
+>
+  <div class="slide-header">
+    <div class="slide-number" style="color: var(--primary-dark)">11</div>
+    <p
+      style="
+        color: var(--primary);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+      "
+    >
+      Outcomes
+    </p>
+    <h2
+      style="
+        font-size: 34px;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 4px;
+      "
+    >
+      Job Profile Matching: Real Data, Real Results
+    </h2>
+    <p style="font-size: 14px; color: var(--gray-dark); font-style: italic">
+      Live output from a single customer taxonomy &mdash; 18,000+ job skills
+      matched against 27,000+ employee skills
+    </p>
+  </div>
+
+  <div class="job-match-layout">
+    <!-- Top: Featured Match -->
+    <div class="job-match-featured">
+      <!-- Job Profile Card -->
+      <div class="jm-profile-card jm-job-card">
+        <div class="jm-card-badge">Job Profile</div>
+        <h3 class="jm-card-title">Senior Manager (PM) &mdash; Data Science</h3>
+        <div class="jm-card-meta">36 required skills &middot; Profile #566</div>
+        <div class="jm-skill-sample">
+          <span class="jm-skill-tag jm-skill-job"
+            >Data Storytelling <span class="jm-prof">L5</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Forecasting <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Data Quality Control <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >KPIs <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Predictive Modeling <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Market Segmentation <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Causal Reasoning <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-job"
+            >Statistical Inferences <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-faded">+28 more</span>
+        </div>
+      </div>
+
+      <!-- Match Arrow -->
+      <div class="jm-match-connector">
+        <div class="jm-match-score">22%</div>
+        <div class="jm-match-label">Skill Overlap</div>
+        <div class="jm-match-sublabel">8 of 36 skills</div>
+        <svg class="jm-arrow-svg" viewBox="0 0 60 24" width="60" height="24">
+          <path
+            d="M0 12 L48 12 M42 6 L54 12 L42 18"
+            stroke="var(--primary)"
+            stroke-width="2"
+            fill="none"
+          />
+        </svg>
+        <div class="jm-gap-badge">Avg Gap: 0.25</div>
+      </div>
+
+      <!-- Employee Card -->
+      <div class="jm-profile-card jm-emp-card">
+        <div class="jm-card-badge jm-badge-emp">#1 Match</div>
+        <h3 class="jm-card-title">
+          <span class="jm-redacted">Candidate A</span>
+        </h3>
+        <div class="jm-card-meta">
+          Senior Manager, Product Analytics &middot; 49 skills
+        </div>
+        <div class="jm-skill-sample">
+          <span class="jm-skill-tag jm-skill-match"
+            >Data Storytelling <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Forecasting <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Data Quality Control <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >KPIs <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Predictive Modeling <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Market Segmentation <span class="jm-prof">L4</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Causal Reasoning <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-match"
+            >Statistical Inferences <span class="jm-prof">L3</span></span
+          >
+          <span class="jm-skill-tag jm-skill-faded">+41 employee-only</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle: Skill-by-Skill Comparison -->
+    <div class="jm-comparison-section">
+      <h4 class="jm-section-heading">Skill-by-Skill Proficiency Comparison</h4>
+      <div class="jm-skill-bars">
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Data Storytelling</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 100%" data-width="100">
+              <span class="jm-bar-label">L5 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-close">-1</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Forecasting</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Data Quality Control</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">KPIs</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Market Segmentation</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 80%" data-width="80">
+              <span class="jm-bar-label">L4 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-exceed">+1</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Predictive Modeling</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Causal Reasoning</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+        <div class="jm-skill-row">
+          <div class="jm-skill-name">Statistical Inferences</div>
+          <div class="jm-bar-pair">
+            <div class="jm-bar jm-bar-job" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Required</span>
+            </div>
+            <div class="jm-bar jm-bar-emp" style="width: 60%" data-width="60">
+              <span class="jm-bar-label">L3 Actual</span>
+            </div>
+          </div>
+          <div class="jm-gap-indicator jm-gap-match">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom: Other candidates -->
+    <div class="jm-candidates-section">
+      <h4 class="jm-section-heading">Top 10 Candidates for This Role</h4>
+      <div class="jm-candidates-table">
+        <div class="jm-cand-row jm-cand-header">
+          <span class="jm-cand-rank">#</span>
+          <span class="jm-cand-name">Candidate</span>
+          <span class="jm-cand-title">Current Title</span>
+          <span class="jm-cand-overlap">Overlap</span>
+          <span class="jm-cand-skills">Skills</span>
+          <span class="jm-cand-gap">Avg Gap</span>
+        </div>
+        <div class="jm-cand-row jm-cand-highlight">
+          <span class="jm-cand-rank">1</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate A</span></span
+          >
+          <span class="jm-cand-title">Sr Manager, Product Analytics</span>
+          <span class="jm-cand-overlap">22.2%</span>
+          <span class="jm-cand-skills">8</span>
+          <span class="jm-cand-gap jm-gap-good">0.25</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">2</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate B</span></span
+          >
+          <span class="jm-cand-title">Vice President, Analytics</span>
+          <span class="jm-cand-overlap">11.1%</span>
+          <span class="jm-cand-skills">4</span>
+          <span class="jm-cand-gap">0.50</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">3</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate C</span></span
+          >
+          <span class="jm-cand-title">Assoc. Data Science Principal</span>
+          <span class="jm-cand-overlap">11.1%</span>
+          <span class="jm-cand-skills">4</span>
+          <span class="jm-cand-gap">1.00</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">4</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate D</span></span
+          >
+          <span class="jm-cand-title">Lead Product Analytics Analyst</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap">1.00</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">5</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate E</span></span
+          >
+          <span class="jm-cand-title">Forecast Modeling Principal</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap">0.67</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">6</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate F</span></span
+          >
+          <span class="jm-cand-title">Manager, Data Governance</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap jm-gap-good">0.33</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">7</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate G</span></span
+          >
+          <span class="jm-cand-title">Manager, Business Insights</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap">0.67</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">8</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate H</span></span
+          >
+          <span class="jm-cand-title">Lead Employer Analytics Analyst</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap">1.00</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">9</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate I</span></span
+          >
+          <span class="jm-cand-title">Director, Operational Analytics</span>
+          <span class="jm-cand-overlap">8.3%</span>
+          <span class="jm-cand-skills">3</span>
+          <span class="jm-cand-gap jm-gap-good">0.33</span>
+        </div>
+        <div class="jm-cand-row">
+          <span class="jm-cand-rank">10</span>
+          <span class="jm-cand-name"
+            ><span class="jm-redacted">Candidate J</span></span
+          >
+          <span class="jm-cand-title">Director Data Engineering</span>
+          <span class="jm-cand-overlap">5.6%</span>
+          <span class="jm-cand-skills">2</span>
+          <span class="jm-cand-gap">1.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="speaker-notes" data-notes="11">
+    <h4>Speaker Notes</h4>
+    Now let me show you real output from our platform. This is from a single
+    customer taxonomy &mdash; job profile matching across 18,000 job skills and
+    27,000 employee skills. Here's a Senior Manager Data Science role with 36
+    required skills. Our top match is a Senior Manager in Product Analytics
+    &mdash; 22% skill overlap with 8 matching skills and an average proficiency
+    gap of just 0.25. That means they're already proficient in almost everything
+    the role requires. Look at the skill-by-skill breakdown: 7 of 8 overlapping
+    skills are an exact match or better. Only Data Storytelling has a gap, and
+    it's just one level. They also bring 41 additional skills &mdash; analytics,
+    data engineering, predictive analytics &mdash; that transfer directly. And
+    below them, we have 9 more ranked candidates. This is the kind of
+    intelligence that powers both internal mobility and targeted upskilling
+    &mdash; you know exactly who's closest, what gaps remain, and what
+    certifications would close them.
+  </div>
+</div>

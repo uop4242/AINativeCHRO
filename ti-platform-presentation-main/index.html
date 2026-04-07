@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censia AI — Talent Intelligence Platform</title>
+    <meta name="description" content="Censia's Talent Intelligence Platform — AI-generated workforce and job profile enrichment built for enterprise Workday environments. 100% skills coverage, zero adoption curve."/>
+    <meta property="og:title" content="Censia AI — Talent Intelligence Platform"/>
+    <meta property="og:description" content="AI-generated workforce intelligence. 100% skills coverage, zero adoption curve. Built for Workday."/>
+    <meta property="og:image" content="../assets/images/hero-people.png"/>
+    <meta property="og:url" content="https://censia.com/ai-native-chro/ti-platform/"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Censia AI — Talent Intelligence Platform"/>
+    <meta name="twitter:description" content="AI-generated workforce intelligence. 100% skills coverage, zero adoption curve."/>
+    <link rel="icon" href="../favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ── Nav offset: push presentation below the 70px global header ── */
+        .presentation {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- ── GLOBAL NAV ── -->
+<div class="global-header-bar">
+<div class="global-header-inner">
+<a class="global-logo" href="../index.html">
+<svg id="global-Color" viewbox="0 0 797.85 180.56" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff}.cls-2{fill:#37cac1}.cls-3{fill:#057d72}</style></defs><g><path class="cls-2" d="M101.16,54.83s-25.83,23.63-38.75,35.44l38.7,35.41-44.2,40.48S27.72,115.58,13.13,90.29C27.73,64.99,56.93,14.4,56.93,14.4l44.24,40.44Z"></path><path class="cls-3" d="M57.67,167.43l84.35-77.15L57.67,13.13h89.09l44.55,77.15-44.55,77.15H57.67Z"></path></g><g><path class="cls-1" d="M306.04,109.19c-.98,9.43-4.33,17.02-10,22.82-8.05,8.25-18.02,12.37-29.88,12.37s-21.83-3.88-29.58-11.63c-5.21-5.19-8.67-11.12-10.37-17.74-1.72-6.62-2.57-14.84-2.57-24.65s.85-18.03,2.57-24.65c1.72-6.62,5.18-12.54,10.37-17.74,7.84-7.85,17.71-11.77,29.58-11.77s22.03,4.03,29.88,12.08c5.69,5.8,9.02,13.35,10,22.67h-19.43c-.39-4.03-1.97-7.71-4.71-11.04-3.44-4.31-8.68-6.48-15.75-6.48-6.37,0-11.74,2.31-16.05,6.92-2.26,2.36-3.95,5.49-5.09,9.41-1.13,3.92-1.77,7.21-1.91,9.86-.15,2.65-.22,6.23-.22,10.75s.08,8.09.22,10.74c.14,2.65.79,5.94,1.91,9.86,1.13,3.92,2.82,7.07,5.09,9.41,4.31,4.62,9.66,6.92,16.05,6.92,6.96,0,12.22-2.22,15.75-6.62,2.74-3.33,4.31-7.16,4.71-11.49h19.43Z"></path><path class="cls-1" d="M381.26,104.77c-.09,2.36-.14,4.08-.14,5.15h-51.23c-.2,6.28,1.67,11.29,5.6,15.01,3.33,3.15,7.12,4.71,11.33,4.71,5.01,0,8.73-1.23,11.19-3.67,1.77-1.77,2.99-3.92,3.67-6.48h17.66c-.5,4.81-2.65,9.52-6.48,14.13-6.09,7.16-14.67,10.74-25.75,10.74-9.52,0-17.57-3.13-24.14-9.43-7.85-7.55-11.77-17.77-11.77-30.62s3.67-23.06,11.04-30.62c6.28-6.48,14.42-9.72,24.44-9.72,12.37,0,21.69,4.71,27.97,14.13,4.71,7.16,6.92,16.05,6.62,26.64l-.02.05ZM362.85,96.53c-.09-5.6-1.67-10.06-4.71-13.4-2.74-2.95-6.62-4.42-11.63-4.42-5.6,0-9.86,1.97-12.81,5.89-2.56,3.24-3.88,7.21-3.97,11.92h33.12Z"></path><path class="cls-1" d="M454.86,142.47h-18.4v-46.96c0-4.81-.96-8.42-2.87-10.82-1.91-2.4-5.18-3.6-9.78-3.6-5.89,0-10.3,3.24-13.24,9.72-1.67,3.83-2.5,10.65-2.5,20.47v31.21h-18.4v-76.55h15.46l1.33,9.86c2.16-3.83,5.27-6.74,9.35-8.76,4.06-2.02,8.47-3.02,13.18-3.02,8.05,0,14.37,2.53,18.99,7.58,4.6,5.05,6.92,11.66,6.92,19.8v51.07h-.03Z"></path><path class="cls-1" d="M528.01,118.76c0,6.78-2.2,12.36-6.62,16.78-5.89,5.89-14.62,8.84-26.2,8.84-10.3,0-18.54-2.95-24.73-8.84-5.4-5.19-8.09-11.13-8.09-17.82h17.23c0,3.74,1.38,6.71,4.12,8.98,2.84,2.26,6.71,3.38,11.63,3.38,10.4,0,15.6-3.24,15.6-9.72,0-4.6-2.56-7.3-7.66-8.09-1.18-.2-4.34-.59-9.49-1.18-5.15-.59-9.05-1.18-11.71-1.77-5.19-1.09-9.41-3.53-12.65-7.36-3.24-3.83-4.85-8.19-4.85-13.1,0-6.96,2.59-12.71,7.8-17.23,5.89-5.1,13.64-7.66,23.26-7.66,10.4,0,18.4,2.99,23.99,8.98,4.51,4.81,6.78,10.06,6.78,15.75h-17.52c0-2.56-1.02-4.96-3.09-7.21-2.36-2.36-5.69-3.54-10.02-3.54-3.44,0-6.08.39-7.94,1.18-3.92,1.57-5.89,4.26-5.89,8.09,0,4.22,2.95,6.78,8.84,7.66,8.14,1.09,13.58,1.81,16.34,2.2,6.28.98,11.33,3.36,15.16,7.15,3.83,3.78,5.74,8.61,5.74,14.5l-.02.03Z"></path><path class="cls-1" d="M555.83,55.31h-19.72v-18.99h19.72v18.99ZM555.39,142.47h-18.7v-76.55h18.7v76.55Z"></path><path class="cls-1" d="M635.62,141.57c-3.24,1.36-6.28,2.06-9.14,2.06-3.83,0-6.87-1.02-9.13-3.09-2.27-2.06-3.53-4.6-3.83-7.66-1.86,3.24-4.92,5.95-9.13,8.17-4.22,2.22-8.93,3.32-14.13,3.32-8.73,0-15.54-2.33-20.39-6.99-4.86-4.65-7.29-10.33-7.29-17.01,0-7.07,2.43-12.71,7.29-16.93,4.85-4.22,11.07-6.57,18.62-7.07l22.53-1.61v-4.71c0-3.92-.93-6.91-2.79-8.98-1.86-2.06-5.26-3.09-10.15-3.09-8.84,0-13.49,3.63-13.99,10.88h-17.81c.49-8.25,3.66-14.45,9.49-18.62,5.83-4.17,13.27-6.26,22.3-6.26,15.12,0,24.68,5.21,28.7,15.6,1.47,3.74,2.2,8.88,2.2,15.46v28.4c0,1.77.32,3.02.96,3.75.64.74,1.74,1.1,3.32,1.1l2.36-.29v13.54l.02.03ZM611.04,111.98v-3.53l-19.43,1.47c-3.04.2-5.64,1.18-7.8,2.95-2.15,1.77-3.24,4.12-3.24,7.07s1.07,5.15,3.24,6.91c2.16,1.77,4.71,2.65,7.66,2.65,5.9,0,10.62-1.55,14.21-4.64,3.58-3.1,5.38-7.38,5.38-12.88h-.02Z"></path></g><g><path class="cls-1" d="M726.66,120.72h-38.4l-7.3,21.9h-23.29l39.57-106.3h20.3l39.79,106.3h-23.29l-7.37-21.9ZM694.17,102.98h26.58l-13.36-39.79-13.21,39.79Z"></path><path class="cls-1" d="M784.72,36.48v106.15h-18.7V36.48h18.7Z"></path></g></svg>
+</a>
+<div class="global-nav-links">
+<a class="global-nav-link" href="../index.html">Home</a>
+<a class="global-nav-link" href="../ai-native-chro-solution.html">Explore the Platform</a>
+<a class="global-nav-link active" href="dist/index.html" aria-current="page">AI Data Foundation</a>
+</div>
+</div>
+</div>
+
+<div id="main-content" class="presentation">
+    <!-- Slides are loaded dynamically from the slides/ directory -->
+</div>
+
+<!-- Navigation dots -->
+<div class="nav-dots" id="navDots"></div>
+
+<!-- Mobile navigation buttons -->
+<div class="mobile-nav">
+    <button class="mobile-nav-btn mobile-nav-prev" id="mobilePrev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/></svg>
+    </button>
+    <span class="mobile-nav-counter" id="mobileCounter">1 / 1</span>
+    <button class="mobile-nav-btn mobile-nav-next" id="mobileNext" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/></svg>
+    </button>
+</div>
+
+<!-- JS modules: order matters — animations & graph before main -->
+<script src="js/animations.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

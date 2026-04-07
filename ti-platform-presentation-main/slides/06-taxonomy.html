@@ -1,0 +1,124 @@
+<!-- Slide 3: A Living Taxonomy Built for Your Organization -->
+<div class="slide slide-content" data-slide="3">
+    <div class="slide-header">
+        <div class="slide-number">03</div>
+        <p style="color: var(--primary); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 8px;">Overview</p>
+        <h2 class="slide-title-text">A Living Taxonomy That Makes Workforce Data AI-Ready</h2>
+        <p style="color: rgba(0,0,0,0.55); font-size: 19px; font-weight: 400; margin-top: 8px; line-height: 1.5;">Censia AI ingests signals and resolves messy skill strings into a dynamic skills intelligence layer that becomes the foundation for everything that follows.</p>
+    </div>
+
+    <div class="taxonomy-bridge">
+        <!-- Column 1: Employee Skills (unique, personal) -->
+        <div class="bridge-col bridge-col-left">
+            <div class="bridge-col-label">How Employees Describe Skills</div>
+            <div class="bridge-col-note">Unique to their experience &mdash; shaped by tools, projects, and context</div>
+            <div class="variant-pill variant-teal" data-group="ml">Python ML Pipelines w/ Kubeflow</div>
+            <div class="variant-pill variant-teal" data-group="ml">Deep Learning (PyTorch, CNNs)</div>
+            <div class="variant-pill variant-teal" data-group="ml">Predictive Model Development</div>
+            <div class="variant-pill variant-blue" data-group="cloud">AWS Lambda &amp; Step Functions</div>
+            <div class="variant-pill variant-blue" data-group="cloud">K8s Cluster Orchestration</div>
+            <div class="variant-pill variant-blue" data-group="cloud">Cloud Architecture (Terraform)</div>
+            <div class="variant-pill variant-purple" data-group="finance">Financial Modelling &amp; DCF</div>
+            <div class="variant-pill variant-purple" data-group="finance">FP&amp;A / Variance Analysis</div>
+            <div class="variant-pill variant-orange" data-group="pm">Agile Coaching (SAFe, Scrum)</div>
+            <div class="variant-pill variant-orange" data-group="pm">Program Delivery &amp; Roadmaps</div>
+        </div>
+
+        <!-- Column 2: Canonical Bridge -->
+        <div class="bridge-col bridge-col-center">
+            <div class="bridge-col-label">Canonical Skills</div>
+            <div class="bridge-col-note">The bridge &mdash; one standardized skill for many variants</div>
+            <div class="canonical-hub hub-teal" data-group="ml">
+                <span class="hub-name">Machine Learning</span>
+                <span class="hub-count">85 variants</span>
+            </div>
+            <div class="canonical-hub hub-blue" data-group="cloud">
+                <span class="hub-name">Cloud Infrastructure</span>
+                <span class="hub-count">61 variants</span>
+            </div>
+            <div class="canonical-hub hub-purple" data-group="finance">
+                <span class="hub-name">Financial Analysis</span>
+                <span class="hub-count">39 variants</span>
+            </div>
+            <div class="canonical-hub hub-orange" data-group="pm">
+                <span class="hub-name">Agile Project Mgmt</span>
+                <span class="hub-count">53 variants</span>
+            </div>
+        </div>
+
+        <!-- Column 3: Job Profiles (canonized skills on profiles) -->
+        <div class="bridge-col bridge-col-right">
+            <div class="bridge-col-label">Job Profiles</div>
+            <div class="bridge-col-note">Canonized skills define what each role requires</div>
+            <div class="job-profile-tile">
+                <div class="job-profile-title">ML Engineer</div>
+                <div class="job-profile-skill job-skill-teal" data-group="ml">Machine Learning <span class="job-level">Expert</span></div>
+                <div class="job-profile-skill job-skill-blue" data-group="cloud">Cloud Infrastructure <span class="job-level">Advanced</span></div>
+            </div>
+            <div class="job-profile-tile">
+                <div class="job-profile-title">Finance Manager</div>
+                <div class="job-profile-skill job-skill-purple" data-group="finance">Financial Analysis <span class="job-level">Expert</span></div>
+                <div class="job-profile-skill job-skill-orange" data-group="pm">Agile Project Mgmt <span class="job-level">Advanced</span></div>
+            </div>
+            <div class="job-profile-tile">
+                <div class="job-profile-title">Platform Engineer</div>
+                <div class="job-profile-skill job-skill-blue" data-group="cloud">Cloud Infrastructure <span class="job-level">Expert</span></div>
+                <div class="job-profile-skill job-skill-teal" data-group="ml">Machine Learning <span class="job-level">Advanced</span></div>
+            </div>
+        </div>
+
+        <!-- SVG overlay for connecting curves -->
+        <svg class="bridge-svg" id="bridgeSvg"></svg>
+    </div>
+
+    <!-- Gap Analysis Dimensions -->
+    <div class="bridge-gap-section">
+        <div class="bridge-gap-header">Because every canonical carries dimensional labels, you can measure gaps on any axis:</div>
+        <div class="bridge-gap-bars">
+            <div class="bridge-gap-row">
+                <span class="bridge-gap-label">Digital Readiness</span>
+                <div class="bridge-gap-track">
+                    <div class="bridge-gap-fill gap-fill-employee" style="width: 72%"></div>
+                    <div class="bridge-gap-fill gap-fill-required" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="bridge-gap-row">
+                <span class="bridge-gap-label">AI Readiness</span>
+                <div class="bridge-gap-track">
+                    <div class="bridge-gap-fill gap-fill-employee" style="width: 45%"></div>
+                    <div class="bridge-gap-fill gap-fill-required" style="width: 78%"></div>
+                </div>
+            </div>
+            <div class="bridge-gap-row">
+                <span class="bridge-gap-label">Cloud Coverage</span>
+                <div class="bridge-gap-track">
+                    <div class="bridge-gap-fill gap-fill-employee" style="width: 61%"></div>
+                    <div class="bridge-gap-fill gap-fill-required" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="bridge-gap-row">
+                <span class="bridge-gap-label">Leadership</span>
+                <div class="bridge-gap-track">
+                    <div class="bridge-gap-fill gap-fill-employee" style="width: 80%"></div>
+                    <div class="bridge-gap-fill gap-fill-required" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bridge-gap-legend">
+            <span class="bridge-gap-legend-item"><span class="legend-swatch swatch-employee"></span>Employee coverage</span>
+            <span class="bridge-gap-legend-item"><span class="legend-swatch swatch-required"></span>Job requirement</span>
+        </div>
+        <div class="bridge-insight">Company-scoped and versioned &mdash; every customer gets their own evolving taxonomy</div>
+    </div>
+
+    <div class="speaker-notes" data-notes="3">
+        <h4>Speaker Notes</h4>
+        So that mess from the last slide &mdash; cleaning up one person's skills is actually the easy part. What we built is a living taxonomy &mdash; a knowledge graph that grows smarter with every skill it processes. New hire comes in with unusual skills on their resume? They auto-canonize against what's already there through our API, with job title context for disambiguation. No redundancy, no manual mapping.
+
+        Here's the insight that makes this powerful: employees describe their skills in their own words &mdash; 'Python ML pipelines with Kubeflow.' But job profiles need standardized language &mdash; 'Machine Learning.' Our taxonomy links both through variant-to-canonical mappings. That's what makes real gap analysis possible &mdash; comparing a person's actual skills against a job's requirements even when they use completely different language.
+
+        And because every canonical carries structured labels, you're not limited to skill-by-skill comparison. You can ask: what's our digital readiness gap? Our AI readiness? Our cloud coverage? Any dimension you care about.
+
+        The engineering challenge behind this is massive &mdash; deduplicating across every employee and job profile in your organization, hundreds of thousands of skill mentions, while keeping the taxonomy company-scoped and versioned so you can track how your skill language evolves. That's what our canonizer was built to do.
+    </div>
+</div>
